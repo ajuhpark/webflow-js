@@ -1,4 +1,4 @@
-// 3.vite.config.js
+// 4.vite.config.js
 const path = require('path')
 const { defineConfig } = require('vite')
 
