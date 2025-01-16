@@ -24,6 +24,7 @@ export default defineConfig({
     rollupOptions: {
       input: 'lib/cs_website_builder_tools.js',
       output: {
+        dir: 'dist', // Ensure the output directory is specified
         format: 'es', // Use 'es' format for code-splitting
         entryFileNames: 'cs_website_builder_tools.js',
         esModule: true,

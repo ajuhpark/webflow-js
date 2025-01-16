@@ -1,17 +1,17 @@
-// 1.vite.config.js
+// 3.vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  server: {
-    host: 'localhost',
-    cors: true, // Use true instead of '*'. Adjust if specific CORS rules are needed.
-    hmr: {
-      host: 'localhost',
-      protocol: 'ws',
-    },
-  },
 
   build: {
+    server: {
+      host: 'localhost',
+      cors: true, // Use true instead of '*'. Adjust if specific CORS rules are needed.
+      hmr: {
+        host: 'localhost',
+        protocol: 'ws',
+      },
+    },
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*
     lib: {
@@ -22,10 +22,11 @@ export default defineConfig({
     */
     // I put this back from the original webflow + vite.js file.
     rollupOptions: {
-      input: 'lib/homepage.js',
+      input: 'lib/case_study.js',
       output: {
-        format: 'es',
-        entryFileNames: 'homepage.js',
+        dir: 'dist', // Ensure the output directory is specified
+        format: 'es', // Use 'es' format for code-splitting
+        entryFileNames: 'case_study.js',
         esModule: true,
         compact: true,
         globals: {
