@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "yarn build-script-1 && yarn build-script-3 && yarn build-script-2 && yarn build-script-4",
+    "build": "concurrently \"yarn build-script-1\" \"yarn build-script-2\" \"yarn build-script-3\" \"yarn build-script-4\"",
     "build-script-1": "vite build --config 1.vite.config.js",
     "build-script-2": "vite build --config 2.vite.config.js",
     "build-script-3": "vite build --config 3.vite.config.js",
