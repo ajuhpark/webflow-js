@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   server: {
     host: 'localhost',
-    cors: '*',
+    cors: true, // Use true instead of '*'. Adjust if specific CORS rules are needed.
     hmr: {
       host: 'localhost',
       protocol: 'ws',
@@ -24,9 +24,9 @@ export default defineConfig({
     rollupOptions: {
       input: 'lib/homepage.js',
       output: {
-        format: 'umd',
+        format: 'es',
         entryFileNames: 'homepage.js',
-        esModule: false,
+        esModule: true,
         compact: true,
         globals: {
           jquery: '$',

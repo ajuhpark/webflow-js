@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     server: {
       host: 'localhost',
-      cors: '*',
+      cors: true, // Use true instead of '*'. Adjust if specific CORS rules are needed.
       hmr: {
         host: 'localhost',
         protocol: 'ws',
@@ -24,9 +24,9 @@ export default defineConfig({
     rollupOptions: {
       input: 'lib/case_study.js',
       output: {
-        format: 'umd',
+        format: 'es', // Use 'es' format for code-splitting
         entryFileNames: 'case_study.js',
-        esModule: false,
+        esModule: true,
         compact: true,
         globals: {
           jquery: '$',
