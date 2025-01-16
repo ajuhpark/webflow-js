@@ -18,10 +18,10 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run build-script-4 & npm run build-script-2 & npm run build-script-1 & npm run build-script-3",
-    "build-script-1": "vite build --config 1.vite.config.js",
-    "build-script-2": "vite build --config 2.vite.config.js",
-    "build-script-3": "vite build --config 3.vite.config.js",
-    "build-script-4": "vite build --config 4.vite.config.js",
+    "build-script-1": "vite build --config 4.vite.config.js",
+    "build-script-2": "vite build --config 3.vite.config.js",
+    "build-script-3": "vite build --config 2.vite.config.js",
+    "build-script-4": "vite build --config 1.vite.config.js",
     "preview": "vite preview",
     "clean": "rimraf -rf dist",
     "lint:fix": "eslint ./src --ext .js,.jsx --fix"
