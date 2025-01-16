@@ -24,7 +24,7 @@ export default defineConfig({
     rollupOptions: {
       input: 'lib/homepage.js',
       output: {
-        dir: 'dist',
+        dir: 'dist/homepage', // Output directory unique to this build
         format: 'es',
         entryFileNames: '[name].js',
         esModule: true,

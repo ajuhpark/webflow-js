@@ -24,7 +24,7 @@ export default defineConfig({
     rollupOptions: {
       input: 'lib/case_study.js',
       output: {
-        dir: 'dist', // Ensure the output directory is specified
+        dir: 'dist/case_study', // Output directory unique to this build
         format: 'es', // Use 'es' format for code-splitting
         entryFileNames: '[name].js',
         esModule: true,
