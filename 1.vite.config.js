@@ -35,6 +35,7 @@ export default defineConfig({
       },
       external: ['jquery'],
     },
+    assetsDir: 'static', // Change 'assets' to 'static' or any other directory name you prefer
   }
 });
 
