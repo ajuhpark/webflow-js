@@ -3,31 +3,14 @@
   "version": "0.0.1",
   "author": "Andrew <ajuhpark@gmail.com>",
   "license": "MIT",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/webflow_js_library.umd.js",
-  "module": "./dist/webflow_js_library.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/webflow_js_library.es.js",
-      "require": "./dist/webflow_js_library.umd.js"
-    }
-  },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-script-1 & npm run build-script-2 & npm run build-script-3 & npm run build-script-4",
-    "build-script-1": "vite build --config 4.vite.config.mjs",
-    "build-script-2": "vite build --config 2.vite.config.mjs",
-    "build-script-3": "vite build --config 3.vite.config.mjs",
-    "build-script-4": "vite build --config 1.vite.config.mjs",
+    "build": "vite build",
     "preview": "vite preview",
     "clean": "rimraf -rf dist",
     "lint:fix": "eslint ./src --ext .js,.jsx --fix"
   },
   "devDependencies": {
-    "concurrently": "^7.6.0",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",

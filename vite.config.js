@@ -18,6 +18,7 @@ export default defineConfig({
         cs_website_builder_tools: 'lib/cs_website_builder_tools.js',
       },
       output: {
+        dir: 'dist', // Ensure the output directory is specified
         format: 'es', // Use 'es' format for code-splitting
         entryFileNames: '[name].js',
         esModule: true,
