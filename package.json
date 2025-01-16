@@ -25,6 +25,8 @@
     "lint:fix": "eslint ./src --ext .js,.jsx --fix"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "babel-plugin-transform-proto-to-assign": "^6.26.0",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
