@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   server: {
     host: 'localhost',
-    cors: true, // Use true instead of '*'. Adjust if specific CORS rules are needed.
+    cors: '*',
     hmr: {
       host: 'localhost',
       protocol: 'ws',
