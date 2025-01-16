@@ -26,7 +26,7 @@ export default defineConfig({
       output: {
         dir: 'dist', // Ensure the output directory is specified
         format: 'es', // Use 'es' format for code-splitting
-        entryFileNames: 'color_mode_toggle.js',
+        entryFileNames: '[name].js',
         esModule: true,
         compact: true,
         globals: {
