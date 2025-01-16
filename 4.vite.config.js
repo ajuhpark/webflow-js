@@ -1,8 +1,7 @@
 // 4.vite.config.js
-const path = require('path')
-const { defineConfig } = require('vite')
+import { defineConfig } from 'vite';
 
-module.exports = defineConfig({
+export default defineConfig({
 
   build: {
     server: {
