@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-script-2 & npm run build-script-1 & npm run build-script-3 & npm run build-script-4",
+    "build": "concurrently \"npm run build-script-1\" \"npm run build-script-2\" \"npm run build-script-3\" \"npm run build-script-4\"",
     "build-script-1": "vite build --config 2.vite.config.js",
     "build-script-2": "vite build --config 1.vite.config.js",
     "build-script-3": "vite build --config 3.vite.config.js",
@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
-    "babel-plugin-transform-proto-to-assign": "^6.26.0",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
@@ -41,6 +40,8 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "@barba/css": "^2.1.15",
+    "concurrently": "^7.0.0",
+    "esbuild": "^0.24.2",
     "gsap": "^3.12.5",
     "js-cookie": "^3.0.5"
   }
