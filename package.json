@@ -24,7 +24,7 @@
     "build-script-5": "vite build --config 5.vite.config.js",
     "build-script-6": "vite build --config 6.vite.config.js",
     "build-script-7": "vite build --config 7.vite.config.js",
-    "build-script-8": "vite build --config 7.vite.config.js",
+    "build-script-8": "vite build --config 8.vite.config.js",
     "clean": "rimraf -rf dist",
     "lint:fix": "eslint ./src --ext .js,.jsx --fix"
   },
