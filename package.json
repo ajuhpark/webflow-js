@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "concurrently \"npm run build-script-1\" \"npm run build-script-2\" \"npm run build-script-3\" \"npm run build-script-4\" \"npm run build-script-5\" \"npm run build-script-6\" \"npm run build-script-7\" \"npm run build-script-8\" \"npm run build-script-9\"",
+    "build": "concurrently \"npm run build-script-1\" \"npm run build-script-2\" \"npm run build-script-3\" \"npm run build-script-4\" \"npm run build-script-5\" \"npm run build-script-6\" \"npm run build-script-7\" \"npm run build-script-8\" \"npm run build-script-9\" \"npm run build-script-10\"",
     "build-script-1": "vite build --config 2.vite.config.js",
     "build-script-2": "vite build --config 1.vite.config.js",
     "build-script-3": "vite build --config 3.vite.config.js",
@@ -26,6 +26,7 @@
     "build-script-7": "vite build --config 7.vite.config.js",
     "build-script-8": "vite build --config 8.vite.config.js",
     "build-script-9": "vite build --config 9.vite.config.js",
+    "build-script-10": "vite build --config 10.vite.config.js",
     "clean": "rimraf -rf dist",
     "lint:fix": "eslint ./src --ext .js,.jsx --fix"
   },
