@@ -1,0 +1,52 @@
+<script>
+(function () {
+  const LOCALHOST_URL = [
+    'http://localhost:5173/@vite/client',
+    'http://localhost:5173/lib/ux_case_study.js'
+  ]
+  const PROD_URL = ['https://andrewjypark-portfolio.netlify.app/ux_case_study/ux_case_study.js']
+
+  function createScripts(arr) {
+    return arr.map(function (url) {
+      const s = document.createElement('script')
+      s.src = url
+      s.type = 'module'  // Always use module type for ES6 imports
+      return s
+    })
+  }
+
+  function insertScript(scriptArr) {
+    scriptArr.forEach(function (script) {
+      script.classList.add("ux_case_study")
+      document.body.appendChild(script)
+      console.log(script)
+    })
+  }
+
+  // Create scripts
+  const localhostScripts = createScripts(LOCALHOST_URL)
+  const prodScripts = createScripts(PROD_URL)
+
+  // Add timeout to fetch to fail faster on other computers
+  const controller = new AbortController()
+  const timeout = setTimeout(function() {
+    controller.abort()
+  }, 1000) // 1 second timeout
+
+  fetch(LOCALHOST_URL[0], {
+    method: 'HEAD',
+    signal: controller.signal
+  })
+    .then(function() {
+      // We're in development mode, insert localhost scripts
+      clearTimeout(timeout)
+      insertScript(localhostScripts)
+    })
+    .catch(function(e) {
+      // We're in production mode, insert production scripts
+      clearTimeout(timeout)
+      console.error(e)
+      insertScript(prodScripts)
+    })
+})()
+</script>

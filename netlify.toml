@@ -4,3 +4,10 @@
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, OPTIONS"
     Access-Control-Allow-Headers = "Content-Type"
+
+[[headers]]
+  for = "/ux_case_study/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
