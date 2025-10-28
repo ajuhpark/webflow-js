@@ -12,6 +12,7 @@ export default defineConfig({
   },
 
   build: {
+    minify: true,
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*
     lib: {

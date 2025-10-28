@@ -12,6 +12,7 @@ export default defineConfig({
   },
 
   build: {
+    minify: true,
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*
     lib: {
@@ -21,6 +22,7 @@ export default defineConfig({
     },
     */
     // I put this back from the original webflow + vite.js file.
+    target: 'esnext', // Ensures modern JavaScript
     rollupOptions: {
       input: 'lib/ux_home.js',
       output: {
@@ -33,7 +35,6 @@ export default defineConfig({
           jquery: '$',
         },
       },
-      target: 'esnext', // Ensures modern JavaScript
       external: ['jquery'],
     },
     assetsDir: 'static', // Change 'assets' to 'static' or any other directory name you prefer
