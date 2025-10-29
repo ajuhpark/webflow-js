@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "dev": "vite", 
+    "dev": "vite",
     "build": "concurrently \"npm run build-script-1\" \"npm run build-script-2\" \"npm run build-script-3\" \"npm run build-script-4\" \"npm run build-script-5\" \"npm run build-script-7\" \"npm run build-script-8\" \"npm run build-script-9\" \"npm run build-script-10\" \"npm run build-script-11\" \"npm run build-script-12\"",
     "build-script-1": "vite build --config 2.vite.config.js",
     "build-script-2": "vite build --config 1.vite.config.js",
@@ -51,6 +51,7 @@
     "gsap": "^3.12.5",
     "imagesloaded": "^5.0.0",
     "js-cookie": "^3.0.5",
+    "roughjs": "^4.6.6",
     "swiper": "^11.2.10"
   }
 }
