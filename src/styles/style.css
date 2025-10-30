@@ -61,24 +61,24 @@
 
 
 /* Text decoration - works with or without SplitText */
-.sct_banner_header_text_1.bigger_text {
+.ux_text_highlighter_deco {
   text-align: center;
 }
 
-.sct_banner_header_text_1.bigger_text .split-line {
+.ux_text_highlighter_deco .split-line {
   position: relative;
   display: block;
   text-align: center;
 }
 
-.sct_banner_header_text_1.bigger_text .split-line > div,
-.sct_banner_header_text_1.bigger_text > div {
+.ux_text_highlighter_deco .split-line > div,
+.ux_text_highlighter_deco > div {
   position: relative;
 }
 
-.sct_banner_header_text_1.bigger_text .split-line > div::after,
-.sct_banner_header_text_1.bigger_text .sct_text_decoration_word > div::after,
-.sct_banner_header_text_1.bigger_text > div::after {
+.ux_text_highlighter_deco .split-line > div::after,
+.ux_text_highlighter_deco .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco > div::after {
   content: '';
   position: absolute;
   bottom: 6px;
@@ -93,12 +93,12 @@
 }
 
 @media (min-width: 762px) and (max-width: 991px) {
-  .sct_banner_header_text_1.bigger_text .split-line > div::after,
-  .sct_banner_header_text_1.bigger_text .sct_text_decoration_word > div::after,
-  .sct_banner_header_text_1.bigger_text > div::after {
+  .ux_text_highlighter_deco .split-line > div::after,
+  .ux_text_highlighter_deco .sct_text_decoration_word > div::after,
+  .ux_text_highlighter_deco > div::after {
     content: '';
     position: absolute;
-    bottom: 4px;
+    bottom: 6px;
     left: -0.15em;
     right: -0.15em;
     height: calc(var(--_responsive---sj--sc_1_card_text_subheader_line_height) - 0px);
@@ -111,12 +111,12 @@
 
 
 @media (max-width: 767px) {
-  .sct_banner_header_text_1.bigger_text .split-line > div::after,
-  .sct_banner_header_text_1.bigger_text .sct_text_decoration_word > div::after,
-  .sct_banner_header_text_1.bigger_text > div::after {
+  .ux_text_highlighter_deco .split-line > div::after,
+  .ux_text_highlighter_deco .sct_text_decoration_word > div::after,
+  .ux_text_highlighter_deco > div::after {
     content: '';
     position: absolute;
-    bottom: 4px;
+    bottom: 0px;
     left: -0.15em;
     right: -0.15em;
     height: calc(var(--_responsive---sj--sc_1_card_text_subheader_line_height) - 0px);
@@ -125,5 +125,24 @@
     pointer-events: none;
     z-index: -1;
   }
+}
+
+/* Color variants for text highlighter */
+.ux_text_highlighter_deco.blue .split-line > div::after,
+.ux_text_highlighter_deco.blue .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco.blue > div::after {
+  background-color: var(--color--blue--300);
+}
+
+.ux_text_highlighter_deco.gold .split-line > div::after,
+.ux_text_highlighter_deco.gold .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco.gold > div::after {
+  background-color: var(--color--bold_yellow_-gold--100);
+}
+
+.ux_text_highlighter_deco.teal .split-line > div::after,
+.ux_text_highlighter_deco.teal .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco.teal > div::after {
+  background-color: var(--color--pale_green--300);
 }
 
