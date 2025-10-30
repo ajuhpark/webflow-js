@@ -29,6 +29,7 @@ export default defineConfig({
         dir: 'dist/ux_home_v2', // Output directory unique to this build
         format: 'es',
         entryFileNames: '[name].js',
+        assetFileNames: '[name].[ext]',
         esModule: true,
         compact: true,
         globals: {
@@ -37,7 +38,6 @@ export default defineConfig({
       },
       external: ['jquery'],
     },
-    assetsDir: 'static', // Change 'assets' to 'static' or any other directory name you prefer
   }
 });
 
