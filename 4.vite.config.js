@@ -5,6 +5,7 @@ export default defineConfig({
 
   build: {
     minify: true,
+    cssCodeSplit: false,
     server: {
       host: 'localhost',
       cors: '*',
@@ -28,6 +29,7 @@ export default defineConfig({
         dir: 'dist/color_mode_toggle', // Output directory unique to this build
         format: 'es', // Use 'es' format for code-splitting
         entryFileNames: '[name].js',
+        assetFileNames: '[name].[ext]',
         esModule: true,
         compact: true,
         globals: {

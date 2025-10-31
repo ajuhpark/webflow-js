@@ -13,6 +13,7 @@ export default defineConfig({
 
   build: {
     minify: true,
+    cssCodeSplit: false,
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*
     lib: {
@@ -28,6 +29,7 @@ export default defineConfig({
         dir: 'dist/cs_website_builder_tools', // Output directory unique to this build
         format: 'es', // Use 'es' format for code-splitting
         entryFileNames: '[name].js',
+        assetFileNames: '[name].[ext]',
         esModule: true,
         compact: true,
         globals: {
