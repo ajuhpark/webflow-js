@@ -10,6 +10,7 @@ export default defineConfig({
     },
   },
   build: {
+    cssCodeSplit: false,
     rollupOptions: {
       input: {
         homepage: 'lib/homepage.js',
@@ -21,6 +22,7 @@ export default defineConfig({
         dir: 'dist', // Ensure the output directory is specified
         format: 'es', // Use 'es' format for code-splitting
         entryFileNames: '[name].js',
+        assetFileNames: '[name].[ext]',
         esModule: true,
         compact: true,
         globals: {
