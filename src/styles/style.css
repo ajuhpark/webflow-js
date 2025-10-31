@@ -63,6 +63,7 @@
 /* Text decoration - works with or without SplitText */
 .ux_text_highlighter_deco {
   text-align: center;
+  z-index: 0;
 }
 
 .ux_text_highlighter_deco .split-line {
@@ -143,6 +144,51 @@
 .ux_text_highlighter_deco.teal .split-line > div::after,
 .ux_text_highlighter_deco.teal .sct_text_decoration_word > div::after,
 .ux_text_highlighter_deco.teal > div::after {
-  background-color: var(--color--pale_green--300);
+  background-color: var(--color--pale_green--200);
+}
+
+/* Small text variant */
+.ux_text_highlighter_deco.small_text .split-line > div::after,
+.ux_text_highlighter_deco.small_text .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco.small_text > div::after {
+  bottom: 2px;
+  height: 12px;
+}
+
+@media (min-width: 762px) and (max-width: 991px) {
+  .ux_text_highlighter_deco.small_text .split-line > div::after,
+  .ux_text_highlighter_deco.small_text .sct_text_decoration_word > div::after,
+  .ux_text_highlighter_deco.small_text > div::after {
+    bottom: 2px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ux_text_highlighter_deco.small_text .split-line > div::after,
+  .ux_text_highlighter_deco.small_text .sct_text_decoration_word > div::after,
+  .ux_text_highlighter_deco.small_text > div::after {
+    bottom: 1px;
+    height: calc(var(--_responsive---lineheights--font1--default) - 0px);
+  }
+}
+
+/* Color variants for small text */
+.ux_text_highlighter_deco.small_text.blue .split-line > div::after,
+.ux_text_highlighter_deco.small_text.blue .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco.small_text.blue > div::after {
+  background-color: var(--color--blue--200);
+}
+
+.ux_text_highlighter_deco.small_text.gold .split-line > div::after,
+.ux_text_highlighter_deco.small_text.gold .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco.small_text.gold > div::after {
+  background-color: var(--color--bold_yellow_-gold--100);
+}
+
+.ux_text_highlighter_deco.small_text.teal .split-line > div::after,
+.ux_text_highlighter_deco.small_text.teal .sct_text_decoration_word > div::after,
+.ux_text_highlighter_deco.small_text.teal > div::after {
+  background-color: var(--color--pale_green--200);
 }
 
