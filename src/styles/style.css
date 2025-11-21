@@ -198,3 +198,10 @@
   aspect-ratio: 1920 / 1020; /* Average aspect ratio of all videos */
   width: 100%;
 }
+
+/* Banner image dimensions - reserves space to prevent layout shifts */
+.ux_cs_banner_image {
+  aspect-ratio: 1052 / 497; /* Actual image dimensions */
+  width: 100%;
+  height: auto;
+}
