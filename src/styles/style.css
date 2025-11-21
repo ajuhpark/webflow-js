@@ -193,11 +193,11 @@
 }
 
 /* Video wrapper dimensions - reserves space to prevent layout shifts */
-.ux_home_cs_image_wrapper,
-.ux_home_cs_image_slot, 
-.ux_home_v2_cs_card_image_container,
-.ux_home_v2_cs_card_video_wrapper {
-  aspect-ratio: 1920 / 1020; /* Average aspect ratio of all videos */
+/* .ux_home_cs_image_wrapper, */
+.ux_home_cs_image_slot,
+.ux_home_v2_cs_card_image_container.hult.video,
+.ux_home_v2_cs_card_image_wrapper.video {
+  aspect-ratio: 1920 / 1051; /* Actual video aspect ratio */
   width: 100%;
 }
 
