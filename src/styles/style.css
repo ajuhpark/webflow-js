@@ -192,3 +192,9 @@
   background-color: var(--color--pale_green--200);
 }
 
+/* Video wrapper dimensions - reserves space to prevent layout shifts */
+.ux_home_cs_image_wrapper,
+.ux_home_v2_cs_card_video_wrapper {
+  aspect-ratio: 1920 / 1020; /* Average aspect ratio of all videos */
+  width: 100%;
+}
