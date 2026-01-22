@@ -1,10 +1,6 @@
 # This file configures CORS headers to allow Webflow to load scripts from Netlify
 # Without these headers, browsers will block cross-origin requests
 
-[build]
-  command = "npm run build"
-  publish = "dist"
-
 [[headers]]
   for = "/ux_home_v2/*"
   [headers.values]
