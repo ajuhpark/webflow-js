@@ -25,9 +25,9 @@ export default defineConfig({
     // I put this back from the original webflow + vite.js file.
     target: 'esnext', // Ensures modern JavaScript
     rollupOptions: {
-      input: 'lib/ux_case_study_no_images_loaded.js',
+      input: 'lib/ux_case_study_website_builder.js',
       output: {
-        dir: 'dist/ux_case_study_no_images_loaded', // Output directory unique to this build
+        dir: 'dist/ux_case_study_website_builder', // Output directory unique to this build
         format: 'es',
         entryFileNames: '[name].js',
         assetFileNames: '[name].[ext]',

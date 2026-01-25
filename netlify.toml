@@ -23,7 +23,7 @@
     Access-Control-Allow-Headers = "Content-Type"
 
 [[headers]]
-  for = "/ux_case_study_no_images_loaded/*"
+  for = "/ux_case_study_website_builder/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, OPTIONS"
