@@ -203,8 +203,8 @@
 }
 
 /* CS Banner image dimensions - reserves space to prevent layout shifts */
-.ux_cs_banner_image {
-  aspect-ratio: 1052 / 497; /* Actual image dimensions */
+/* .ux_cs_banner_image {
+  aspect-ratio: 1052 / 497; 
   width: 100%;
   height: auto;
-}
+} */
